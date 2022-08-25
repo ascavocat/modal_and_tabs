@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Modal</title>
+</head>
+<body>
+    <!-- button modal 1 -->
+    <button class="js-modal-trigger button is-primary" data-target="modal-js-1">
+        Open JS example modal
+    </button>
+
+    <br><br>
+    <!-- button mondal 2 -->
+    <button class="js-modal-trigger button is-primary" data-target="modal-js-2">
+        Open JS example modal
+    </button>
+    <!-- Modal 1 -->
+    <div id="modal-js-1" class="modal">
+        <div class="modal-background"></div>
+      
+        <div class="modal-content">
+          <div class="box">
+            <!-- Modal 1 content -->
+            <section class="hero is-small is-primary">
+                <div class="hero-body">
+                  <div class="container has-text-centered">
+                      <h1 class="title">
+                        Business Opportunity 
+                      </h1>
+                      <h1 class="subtitle">
+                        No. A1220722 
+                      </h1>
+                    </div>
+                </div> 
+                  
+                  <div class="hero-foot">
+                    <nav class="tabs is-boxed ">
+                        <div class="container">
+                          <ul>
+                            <li class="tab is-active" onclick="openTab(event,'tab-m1-1')"><a >Details</a></li>
+                            <li class="tab" onclick="openTab(event,'tab-m1-2')"><a >Specifications</a></li>
+                            <li class="tab" onclick="openTab(event,'tab-m1-3')"><a >Finance</a></li>
+                          </ul>
+                        </div>
+                      </nav>
+                  </div>
+                </section>
+                
+                <div class="container section">
+                    <div id="tab-m1-1" class="content-tab" >
+                    <h1 class="subtitle">Mining Drill - Purchase</h1>
+                        <figure>
+                            <img class="is-fullwidth is-cover is-rounded" style="height: 200px;" src="https://static.shuffle.dev/uploads/files/f0/f0376ece2ca23813ee561647ab26c8814e047808/underground-drilling-machine1.webp">
+                            
+                            <figcaption>
+                              Photo: From DRFAB - DR600
+                            </figcaption><br>
+                          </figure>
+                          <p class="has-text-justified">
+                          One of our partners in Africa is seeking an opportuny to buy with financing option a mining drill.</p>
+
+                          <p class="has-text-justified">
+                           This is high priority request.</p>
+                    </div>
+                    <div id="tab-m1-2" class="content-tab" style="display:none">
+                        <h1 class="subtitle">Specifications:</h1> <br>
+                        <p> Any modern drill allowing optimum production at lower cost.</p>
+                    </div>
+                    <div id="tab-m1-3" class="content-tab" style="display:none">
+                        <h1 class="subtitle">Financing:</h1> <br>
+                        <ul>
+                            <li>20% down payment</li>
+                            <li>5 years term</li>
+                            <li>Interest rate - Reasonable rate </li>
+                        </ul>
+                    </div>
+                </div>
+            <!-- End content -->
+          </div>
+        </div>
+      
+        <button class="modal-close is-large" aria-label="close"></button>
+      </div>
+
+      <!-- Modal 2 -->
+
+    <div id="modal-js-2" class="modal">
+        <div class="modal-background"></div>
+      
+        <div class="modal-content">
+          <div class="box">
+            <!-- Modal 2 content -->
+            <section class="hero is-small is-primary">
+                <div class="hero-body">
+                  <div class="container has-text-centered">
+                      <h1 class="title">
+                        JS for Bulma Tabs - Modal 2 
+                      </h1>
+                    </div>
+                </div> 
+                  
+                <div class="hero-foot">
+                <nav class="tabs is-boxed ">
+                        <div class="container">
+                          <ul>
+                            <li class="tab is-active" onclick="openTab(event,'tab-m2-1')"><a >Web Development</a></li>
+                            <li class="tab" onclick="openTab(event,'tab-m2-2')"><a >Website Audit</a></li>
+                            <li class="tab" onclick="openTab(event,'tab-m2-3')"><a >Support</a></li>
+                          </ul>
+                        </div>
+                      </nav>
+                  </div>
+                </section>
+                
+                <div class="container section">
+                    <div id="tab-m2-1" class="content-tab" >
+                        <h2>Test1</h2> <br>
+                      <p>
+                
+                      Overview Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    </div>
+                    <div id="tab-m2-2" class="content-tab" style="display:none">
+                        <h2>Test2</h2> <br>
+                        <p>
+                         
+                        Details Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    </div>
+                    <div id="tab-m2-3" class="content-tab" style="display:none">
+                        <h2>Test3</h2> <br>
+                       <p>
+                          
+                       Specification Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    </div>
+                </div>
+            <!-- End Modal 2 content -->
+          </div>
+        </div>
+      
+        <button class="modal-close is-large" aria-label="close"></button>
+      </div>
+
+    <script src="bulma_modal.js"></script>
+</body>
+</html>
